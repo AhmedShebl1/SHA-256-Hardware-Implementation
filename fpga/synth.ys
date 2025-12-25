@@ -1,0 +1,5 @@
+read_verilog -sv Source/*.sv
+read_verilog fpga_wrapper.v
+
+synth_ice40 -top fpga_wrapper -json fpga_top.json
+stat

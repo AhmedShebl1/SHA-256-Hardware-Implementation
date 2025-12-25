@@ -1,0 +1,908 @@
+Warning: No PCF file specified; IO pins will be placed automatically
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     5750 LCs used as LUT4 only
+Info:     1609 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:       62 LCs used as DFF only
+Info: Packing carries..
+Info:       14 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        1 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk$SB_IO_IN (fanout 1671)
+Info: promoting n_rst_SB_LUT4_I3_O [reset] (fanout 1671)
+Info: promoting dut.buff.next_ptr_SB_LUT4_O_2_I2_SB_DFFER_Q_E [cen] (fanout 515)
+Info: promoting dut.he.message_counter.next_rollover_flag_SB_LUT4_O_I2_SB_DFFER_E_Q_SB_LUT4_I1_O [cen] (fanout 256)
+Info: promoting dut.he.message_counter.next_rollover_flag_SB_DFFS_D_Q_SB_LUT4_I2_1_O [cen] (fanout 256)
+Info: Constraining chains...
+Info:       16 LCs used to legalise carry chains.
+Info: Checksum: 0x770f1ce8
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    7452/   7680    97%
+Info: 	        ICESTORM_RAM:       0/     32     0%
+Info: 	               SB_IO:      85/    256    33%
+Info: 	               SB_GB:       5/      8    62%
+Info: 	        ICESTORM_PLL:       0/      2     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 6927 cells, random placement wirelen = 216385.
+Info:     at initial placer iter 0, wirelen = 3289
+Info:     at initial placer iter 1, wirelen = 3287
+Info:     at initial placer iter 2, wirelen = 3057
+Info:     at initial placer iter 3, wirelen = 3024
+Info: Running main analytical placer, max placement attempts per cell = 7110220.
+Info:     at iteration #1, type ALL: wirelen solved = 3028, spread = 59890, legal = 61025; time = 0.22s
+Info:     at iteration #2, type ALL: wirelen solved = 3790, spread = 48280, legal = 49900; time = 0.27s
+Info:     at iteration #3, type ALL: wirelen solved = 5784, spread = 42023, legal = 44584; time = 0.33s
+Info:     at iteration #4, type ALL: wirelen solved = 8682, spread = 35701, legal = 38716; time = 0.26s
+Info:     at iteration #5, type ALL: wirelen solved = 10840, spread = 32896, legal = 35917; time = 0.19s
+Info:     at iteration #6, type ALL: wirelen solved = 14067, spread = 30910, legal = 34739; time = 0.19s
+Info:     at iteration #7, type ALL: wirelen solved = 15080, spread = 30039, legal = 32992; time = 0.17s
+Info:     at iteration #8, type ALL: wirelen solved = 15695, spread = 29563, legal = 33233; time = 0.16s
+Info:     at iteration #9, type ALL: wirelen solved = 16402, spread = 28814, legal = 33343; time = 0.17s
+Info:     at iteration #10, type ALL: wirelen solved = 17424, spread = 28749, legal = 32423; time = 0.18s
+Info:     at iteration #11, type ALL: wirelen solved = 17744, spread = 27821, legal = 31985; time = 0.23s
+Info:     at iteration #12, type ALL: wirelen solved = 17840, spread = 27950, legal = 31162; time = 0.24s
+Info:     at iteration #13, type ALL: wirelen solved = 18564, spread = 27407, legal = 30862; time = 0.19s
+Info:     at iteration #14, type ALL: wirelen solved = 18770, spread = 27336, legal = 30765; time = 0.19s
+Info:     at iteration #15, type ALL: wirelen solved = 19120, spread = 26935, legal = 30123; time = 0.19s
+Info:     at iteration #16, type ALL: wirelen solved = 19218, spread = 26416, legal = 29970; time = 0.22s
+Info:     at iteration #17, type ALL: wirelen solved = 19497, spread = 26605, legal = 29738; time = 0.15s
+Info:     at iteration #18, type ALL: wirelen solved = 19792, spread = 26360, legal = 29314; time = 0.15s
+Info:     at iteration #19, type ALL: wirelen solved = 19888, spread = 26152, legal = 28870; time = 0.15s
+Info:     at iteration #20, type ALL: wirelen solved = 19948, spread = 26383, legal = 29906; time = 0.15s
+Info:     at iteration #21, type ALL: wirelen solved = 20332, spread = 26262, legal = 29450; time = 0.23s
+Info:     at iteration #22, type ALL: wirelen solved = 20501, spread = 26141, legal = 29270; time = 0.15s
+Info:     at iteration #23, type ALL: wirelen solved = 20629, spread = 26153, legal = 29243; time = 0.15s
+Info:     at iteration #24, type ALL: wirelen solved = 20788, spread = 25912, legal = 29219; time = 0.15s
+Info: HeAP Placer Time: 6.52s
+Info:   of which solving equations: 3.54s
+Info:   of which spreading cells: 0.68s
+Info:   of which strict legalisation: 0.91s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 1915, wirelen = 28870
+Info:   at iteration #5: temp = 0.000000, timing cost = 1843, wirelen = 25597
+Info:   at iteration #10: temp = 0.000000, timing cost = 2223, wirelen = 24667
+Info:   at iteration #15: temp = 0.000000, timing cost = 2352, wirelen = 23945
+Info:   at iteration #20: temp = 0.000000, timing cost = 2273, wirelen = 23765
+Info:   at iteration #23: temp = 0.000000, timing cost = 2274, wirelen = 23717 
+Info: SA placement time 9.87s
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 45.30 MHz (PASS at 45.00 MHz)
+
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 20.59 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 1.96 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 13 endpoint(s)
+Info:          + represents [1,13) endpoint(s)
+Info: [   149,   1184) |+
+Info: [  1184,   2219) |*****+
+Info: [  2219,   3254) |***********+
+Info: [  3254,   4289) |**********+
+Info: [  4289,   5324) |***********+
+Info: [  5324,   6359) |***********+
+Info: [  6359,   7394) |*********+
+Info: [  7394,   8429) |***********+
+Info: [  8429,   9464) |*************+
+Info: [  9464,  10499) |******************************+
+Info: [ 10499,  11534) |*********+
+Info: [ 11534,  12569) |************************************+
+Info: [ 12569,  13604) |****************************+
+Info: [ 13604,  14639) |**************************************+
+Info: [ 14639,  15674) |**************************************************+
+Info: [ 15674,  16709) |************************************************************ 
+Info: [ 16709,  17744) |**********************************************+
+Info: [ 17744,  18779) |****************************+
+Info: [ 18779,  19814) |*******+
+Info: [ 19814,  20849) |****************************************+
+Info: Checksum: 0x1bd281bb
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 26875 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       51        948 |   51   948 |     26007|       1.11       1.11|
+Info:       2000 |      117       1882 |   66   934 |     25170|       0.78       1.89|
+Info:       3000 |      213       2786 |   96   904 |     24534|       0.81       2.71|
+Info:       4000 |      280       3719 |   67   933 |     23717|       0.61       3.32|
+Info:       5000 |      396       4603 |  116   884 |     22952|       0.54       3.86|
+Info:       6000 |      502       5497 |  106   894 |     22301|       0.64       4.50|
+Info:       7000 |      684       6315 |  182   818 |     21680|       0.59       5.09|
+Info:       8000 |      859       7140 |  175   825 |     21242|       0.53       5.62|
+Info:       9000 |     1019       7980 |  160   840 |     20558|       0.59       6.20|
+Info:      10000 |     1218       8781 |  199   801 |     20002|       0.57       6.77|
+Info:      11000 |     1439       9560 |  221   779 |     19453|       0.60       7.38|
+Info:      12000 |     1619      10380 |  180   820 |     18970|       0.58       7.96|
+Info:      13000 |     1868      11131 |  249   751 |     18538|       0.64       8.60|
+Info:      14000 |     2050      11949 |  182   818 |     17887|       0.53       9.12|
+Info:      15000 |     2250      12749 |  200   800 |     17416|       0.54       9.67|
+Info:      16000 |     2440      13559 |  190   810 |     17034|       0.63      10.30|
+Info:      17000 |     2695      14304 |  255   745 |     16694|       0.65      10.95|
+Info:      18000 |     2868      15069 |  173   765 |     16121|       0.47      11.42|
+Info:      19000 |     3152      15749 |  284   680 |     15541|       0.28      11.70|
+Info:      20000 |     3414      16481 |  262   732 |     15031|       0.40      12.10|
+Info:      21000 |     3661      17105 |  247   624 |     14375|       1.51      13.61|
+Info:      22000 |     3965      17796 |  304   691 |     13846|       0.35      13.96|
+Info:      23000 |     4207      18538 |  242   742 |     13283|       0.28      14.25|
+Info:      24000 |     4531      19210 |  324   672 |     12873|       0.42      14.67|
+Info:      25000 |     4863      19868 |  332   658 |     12557|       0.49      15.16|
+Info:      26000 |     5131      20594 |  268   726 |     12015|       0.30      15.46|
+Info:      27000 |     5505      21220 |  374   626 |     11621|       0.41      15.87|
+Info:      28000 |     5832      21893 |  327   673 |     11148|       0.34      16.22|
+Info:      29000 |     6195      22530 |  363   637 |     10691|       0.36      16.57|
+Info:      30000 |     6554      23171 |  359   641 |     10252|       0.42      17.00|
+Info:      31000 |     6888      23837 |  334   666 |      9959|       0.65      17.65|
+Info:      32000 |     7297      24428 |  409   591 |      9607|       0.47      18.12|
+Info:      33000 |     7678      25047 |  381   619 |      9290|       0.52      18.63|
+Info:      34000 |     7997      25728 |  319   681 |      8896|       0.57      19.20|
+Info:      35000 |     8346      26379 |  349   651 |      8453|       0.37      19.57|
+Info:      36000 |     8652      27073 |  306   694 |      7975|       0.35      19.92|
+Info:      37000 |     8990      27734 |  338   661 |      7711|       0.67      20.60|
+Info:      38000 |     9352      28369 |  362   635 |      7327|       0.47      21.07|
+Info:      39000 |     9701      29018 |  349   649 |      7131|       0.58      21.65|
+Info:      40000 |    10066      29650 |  365   632 |      6805|       0.50      22.15|
+Info:      41000 |    10402      30314 |  336   664 |      6480|       0.54      22.69|
+Info:      42000 |    10767      30874 |  365   560 |      6146|       0.44      23.13|
+Info:      43000 |    11105      31452 |  338   578 |      5727|       0.38      23.51|
+Info:      44000 |    11500      32054 |  395   602 |      5401|       0.43      23.94|
+Info:      45000 |    11881      32673 |  381   619 |      5125|       0.49      24.43|
+Info:      46000 |    12322      33232 |  441   559 |      4849|       0.43      24.85|
+Info:      47000 |    12782      33772 |  460   540 |      4634|       0.46      25.31|
+Info:      48000 |    13245      34309 |  463   537 |      4344|       0.53      25.84|
+Info:      49000 |    13723      34828 |  478   519 |      4080|       0.44      26.28|
+Info:      50000 |    14177      35374 |  454   546 |      3767|       0.39      26.67|
+Info:      51000 |    14641      35906 |  464   532 |      3418|       0.45      27.11|
+Info:      52000 |    15098      36449 |  457   543 |      3250|       0.64      27.76|
+Info:      53000 |    15569      36978 |  471   529 |      2996|       0.50      28.26|
+Info:      54000 |    15874      37673 |  305   695 |      2411|       0.29      28.55|
+Info:      55000 |    16189      38358 |  315   685 |      1885|       0.50      29.05|
+Info:      56000 |    16592      38955 |  403   597 |      1601|       0.88      29.92|
+Info:      57000 |    17077      39470 |  485   515 |      1527|       0.81      30.74|
+Info:      58000 |    17451      40096 |  374   626 |      1463|       0.60      31.34|
+Info:      59000 |    17740      40807 |  289   711 |      1154|       1.00      32.33|
+Info:      60000 |    17977      41570 |  237   763 |       482|       0.65      32.99|
+Info:      60986 |    18273      42261 |  296   691 |         0|       0.66      33.65|
+Info: Routing complete.
+Info: Router1 time 33.65s
+Info: Checksum: 0x9be1b172
+
+Info: Critical path report for clock 'clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source dut.he.message_counter.next_count_SB_LUT4_O_4_LC.O
+Info:    routing  0.59  1.13 Net dut.buff.next_hash_buffer_SB_LUT4_O_173_I2_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_O_I3[1] (15,11) -> (15,11)
+Info:                          Sink dut.he.message_counter.next_rollover_flag_SB_LUT4_O_I2_SB_DFFER_E_2_Q_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.38  1.51 Source dut.he.message_counter.next_rollover_flag_SB_LUT4_O_I2_SB_DFFER_E_2_Q_SB_LUT4_O_LC.O
+Info:    routing  1.27  2.78 Net dut.he.message_counter.next_rollover_flag_SB_LUT4_O_I2_SB_DFFER_E_2_Q[1] (15,11) -> (13,14)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_173_I2_SB_LUT4_O_1_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  3.10 Source dut.buff.next_hash_buffer_SB_LUT4_O_173_I2_SB_LUT4_O_1_I1_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  0.59  3.68 Net dut.buff.next_hash_buffer_SB_LUT4_O_137_I2_SB_LUT4_I1_O_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O_I3[2] (13,14) -> (12,14)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  4.00 Source dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_1_LC.O
+Info:    routing  1.33  5.33 Net dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I1[1] (12,14) -> (11,10)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.38  5.71 Source dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_LC.O
+Info:    routing  0.59  6.29 Net dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O[2] (11,10) -> (11,9)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  6.61 Source dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_LC.O
+Info:    routing  0.96  7.57 Net dut.buff.next_hash_buffer_SB_LUT4_O_116_I2_SB_LUT4_I2_O_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_I2_O[2] (11,9) -> (11,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_118_I2_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I1_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  7.88 Source dut.buff.next_hash_buffer_SB_LUT4_O_118_I2_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I1_O_SB_LUT4_O_1_LC.O
+Info:    routing  0.59  8.47 Net dut.buff.next_hash_buffer_SB_LUT4_O_118_I2_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I1_O[3] (11,7) -> (11,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_102_I2_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  8.79 Source dut.buff.next_hash_buffer_SB_LUT4_O_102_I2_SB_LUT4_O_1_LC.O
+Info:    routing  0.59  9.37 Net dut.buff.next_hash_buffer_SB_LUT4_O_102_I2[2] (11,6) -> (11,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  9.69 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0_SB_LUT4_O_LC.O
+Info:    routing  1.13  10.82 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0[1] (11,6) -> (7,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.I1
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.26  11.08 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.08 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,6) -> (7,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.20 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.20 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,6) -> (7,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.33 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.33 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,6) -> (7,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.45 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.45 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,6) -> (7,6)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.58 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.20  11.78 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,6) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.90 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.90 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.03 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.03 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.15 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.15 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.28 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.28 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.41 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.41 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.53 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.53 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.66 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.66 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,7)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.78 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.20  12.98 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,7) -> (7,8)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.11 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.11 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,8) -> (7,8)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.23 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.23 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,8) -> (7,8)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.36 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.26  13.62 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (7,8) -> (7,8)
+Info:                          Sink dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  13.93 Source dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.O
+Info:    routing  1.33  15.26 Net dut.buff.next_hash_buffer_SB_LUT4_O_110_I2_SB_LUT4_I1_O_SB_LUT4_I1_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O[1] (7,8) -> (7,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  15.58 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0_SB_LUT4_O_LC.O
+Info:    routing  1.27  16.85 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_I0[1] (7,13) -> (5,12)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.I1
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.26  17.11 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.11 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,12) -> (5,12)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  17.24 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.24 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,12) -> (5,12)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  17.36 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.36 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,12) -> (5,12)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  17.49 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.49 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,12) -> (5,12)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  17.61 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.20  17.81 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,12) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  17.94 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  17.94 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,13) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  18.06 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  18.06 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,13) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  18.19 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  18.19 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,13) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  18.31 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  18.31 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI (5,13) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  18.44 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.26  18.70 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI (5,13) -> (5,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  19.01 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.O
+Info:    routing  0.59  19.60 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O[1] (5,13) -> (4,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_99_I3_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.26  19.86 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_99_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.26  20.12 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I2[3] (4,13) -> (4,13)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               Source/compression_core.sv:82.36-82.73
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.31  20.43 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I3_SB_LUT4_O_LC.O
+Info:    routing  0.59  21.02 Net dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_I3[3] (4,13) -> (4,14)
+Info:                          Sink dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      setup  0.34  21.36 Source dut.he.compress_core.next_hash_reg_SB_LUT4_O_177_LC.I3
+Info: 8.58 ns logic, 12.78 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source last_block_invalid_bits[2]$sb_io.D_IN_0
+Info:    routing  1.28  1.28 Net last_block_invalid_bits[2]$SB_IO_IN (0,17) -> (6,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_6_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               fpga_wrapper.v:8.24-8.47
+Info:      logic  0.31  1.60 Source dut.cu.next_data_size_SB_LUT4_O_6_I3_SB_LUT4_O_I3_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:    routing  2.86  4.45 Net dut.cu.next_data_size_SB_LUT4_O_6_I3_SB_LUT4_O_I3_SB_LUT4_O_I2[2] (6,17) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_6_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.23  4.68 Source dut.cu.next_data_size_SB_LUT4_O_6_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  4.68 Net dut.cu.next_data_size_SB_LUT4_O_11_I3_SB_LUT4_O_I3_SB_LUT4_O_I2[3] (27,12) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_11_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  4.81 Source dut.cu.next_data_size_SB_LUT4_O_11_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  4.81 Net dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_I2[3] (27,12) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  4.94 Source dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  4.94 Net dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CI_CO (27,12) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  5.06 Source dut.cu.next_data_size_SB_LUT4_O_10_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  5.06 Net dut.cu.next_data_size_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3 (27,12) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  5.19 Source dut.cu.next_data_size_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  5.19 Net dut.cu.next_data_size_SB_LUT4_O_1_I3_SB_LUT4_O_I1[3] (27,12) -> (27,12)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  5.32 Source dut.cu.next_data_size_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  5.51 Net dut.cu.next_data_size_SB_LUT4_O_2_I3_SB_LUT4_O_I2[3] (27,12) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_2_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  5.64 Source dut.cu.next_data_size_SB_LUT4_O_2_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  5.64 Net dut.cu.next_data_size_SB_LUT4_O_50_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_50_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  5.76 Source dut.cu.next_data_size_SB_LUT4_O_50_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  5.76 Net dut.cu.next_data_size_SB_LUT4_O_42_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_42_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  5.89 Source dut.cu.next_data_size_SB_LUT4_O_42_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  5.89 Net dut.cu.next_data_size_SB_LUT4_O_49_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_49_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.01 Source dut.cu.next_data_size_SB_LUT4_O_49_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.01 Net dut.cu.next_data_size_SB_LUT4_O_41_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_41_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.14 Source dut.cu.next_data_size_SB_LUT4_O_41_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.14 Net dut.cu.next_data_size_SB_LUT4_O_48_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_48_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.27 Source dut.cu.next_data_size_SB_LUT4_O_48_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.27 Net dut.cu.next_data_size_SB_LUT4_O_47_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_47_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.39 Source dut.cu.next_data_size_SB_LUT4_O_47_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.39 Net dut.cu.next_data_size_SB_LUT4_O_40_I3_SB_LUT4_O_I2[3] (27,13) -> (27,13)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_40_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.52 Source dut.cu.next_data_size_SB_LUT4_O_40_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  6.72 Net dut.cu.next_data_size_SB_LUT4_O_39_I3_SB_LUT4_O_I2[3] (27,13) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_39_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.84 Source dut.cu.next_data_size_SB_LUT4_O_39_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.84 Net dut.cu.next_data_size_SB_LUT4_O_46_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_46_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  6.97 Source dut.cu.next_data_size_SB_LUT4_O_46_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  6.97 Net dut.cu.next_data_size_SB_LUT4_O_45_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_45_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.09 Source dut.cu.next_data_size_SB_LUT4_O_45_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  7.09 Net dut.cu.next_data_size_SB_LUT4_O_38_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_38_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.22 Source dut.cu.next_data_size_SB_LUT4_O_38_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  7.22 Net dut.cu.next_data_size_SB_LUT4_O_44_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_44_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.34 Source dut.cu.next_data_size_SB_LUT4_O_44_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  7.34 Net dut.cu.next_data_size_SB_LUT4_O_37_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_37_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.47 Source dut.cu.next_data_size_SB_LUT4_O_37_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  7.47 Net dut.cu.next_data_size_SB_LUT4_O_36_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_36_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.60 Source dut.cu.next_data_size_SB_LUT4_O_36_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  7.60 Net dut.cu.next_data_size_SB_LUT4_O_43_I3_SB_LUT4_O_I2[3] (27,14) -> (27,14)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_43_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  7.72 Source dut.cu.next_data_size_SB_LUT4_O_43_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  7.92 Net dut.cu.next_data_size_SB_LUT4_O_58_I3_SB_LUT4_O_I2[3] (27,14) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_58_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.05 Source dut.cu.next_data_size_SB_LUT4_O_58_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.05 Net dut.cu.next_data_size_SB_LUT4_O_54_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_54_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.17 Source dut.cu.next_data_size_SB_LUT4_O_54_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.17 Net dut.cu.next_data_size_SB_LUT4_O_53_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_53_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.30 Source dut.cu.next_data_size_SB_LUT4_O_53_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.30 Net dut.cu.next_data_size_SB_LUT4_O_57_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_57_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.42 Source dut.cu.next_data_size_SB_LUT4_O_57_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.42 Net dut.cu.next_data_size_SB_LUT4_O_52_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_52_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.55 Source dut.cu.next_data_size_SB_LUT4_O_52_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.55 Net dut.cu.next_data_size_SB_LUT4_O_56_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_56_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.68 Source dut.cu.next_data_size_SB_LUT4_O_56_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.68 Net dut.cu.next_data_size_SB_LUT4_O_55_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_55_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.80 Source dut.cu.next_data_size_SB_LUT4_O_55_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  8.80 Net dut.cu.next_data_size_SB_LUT4_O_51_I3_SB_LUT4_O_I2[3] (27,15) -> (27,15)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_51_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  8.93 Source dut.cu.next_data_size_SB_LUT4_O_51_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  9.12 Net dut.cu.next_data_size_SB_LUT4_O_31_I3_SB_LUT4_O_I2[3] (27,15) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_31_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.25 Source dut.cu.next_data_size_SB_LUT4_O_31_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.25 Net dut.cu.next_data_size_SB_LUT4_O_30_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_30_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.38 Source dut.cu.next_data_size_SB_LUT4_O_30_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.38 Net dut.cu.next_data_size_SB_LUT4_O_29_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_29_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.50 Source dut.cu.next_data_size_SB_LUT4_O_29_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.50 Net dut.cu.next_data_size_SB_LUT4_O_28_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_28_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.63 Source dut.cu.next_data_size_SB_LUT4_O_28_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.63 Net dut.cu.next_data_size_SB_LUT4_O_33_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_33_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.75 Source dut.cu.next_data_size_SB_LUT4_O_33_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.75 Net dut.cu.next_data_size_SB_LUT4_O_35_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_35_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.88 Source dut.cu.next_data_size_SB_LUT4_O_35_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.88 Net dut.cu.next_data_size_SB_LUT4_O_34_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_34_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.01 Source dut.cu.next_data_size_SB_LUT4_O_34_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.01 Net dut.cu.next_data_size_SB_LUT4_O_32_I3_SB_LUT4_O_I2[3] (27,16) -> (27,16)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_32_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.13 Source dut.cu.next_data_size_SB_LUT4_O_32_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  10.33 Net dut.cu.next_data_size_SB_LUT4_O_27_I3_SB_LUT4_O_I2[3] (27,16) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_27_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.45 Source dut.cu.next_data_size_SB_LUT4_O_27_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.45 Net dut.cu.next_data_size_SB_LUT4_O_23_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_23_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.58 Source dut.cu.next_data_size_SB_LUT4_O_23_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.58 Net dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  10.70 Source dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  10.70 Net dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.83 Source dut.cu.next_data_size_SB_LUT4_O_26_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.83 Net dut.cu.next_data_size_SB_LUT4_O_21_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_21_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.96 Source dut.cu.next_data_size_SB_LUT4_O_21_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.96 Net dut.cu.next_data_size_SB_LUT4_O_25_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_25_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.08 Source dut.cu.next_data_size_SB_LUT4_O_25_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.08 Net dut.cu.next_data_size_SB_LUT4_O_24_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_24_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.21 Source dut.cu.next_data_size_SB_LUT4_O_24_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.21 Net dut.cu.next_data_size_SB_LUT4_O_20_I3_SB_LUT4_O_I2[3] (27,17) -> (27,17)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_20_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.34 Source dut.cu.next_data_size_SB_LUT4_O_20_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  11.53 Net dut.cu.next_data_size_SB_LUT4_O_19_I3_SB_LUT4_O_I2[3] (27,17) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_19_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.66 Source dut.cu.next_data_size_SB_LUT4_O_19_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.66 Net dut.cu.next_data_size_SB_LUT4_O_15_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_15_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.78 Source dut.cu.next_data_size_SB_LUT4_O_15_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.78 Net dut.cu.next_data_size_SB_LUT4_O_14_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_14_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.91 Source dut.cu.next_data_size_SB_LUT4_O_14_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.91 Net dut.cu.next_data_size_SB_LUT4_O_18_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_18_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.03 Source dut.cu.next_data_size_SB_LUT4_O_18_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.03 Net dut.cu.next_data_size_SB_LUT4_O_13_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_13_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.16 Source dut.cu.next_data_size_SB_LUT4_O_13_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.16 Net dut.cu.next_data_size_SB_LUT4_O_17_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_17_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.29 Source dut.cu.next_data_size_SB_LUT4_O_17_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.29 Net dut.cu.next_data_size_SB_LUT4_O_16_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_16_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.41 Source dut.cu.next_data_size_SB_LUT4_O_16_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.41 Net dut.cu.next_data_size_SB_LUT4_O_12_I3_SB_LUT4_O_I2[3] (27,18) -> (27,18)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_12_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.54 Source dut.cu.next_data_size_SB_LUT4_O_12_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  12.73 Net dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I2[3] (27,18) -> (27,19)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.86 Source dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.86 Net dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O[3] (27,19) -> (27,19)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  12.99 Source dut.cu.next_data_size_SB_LUT4_O_5_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.99 Net dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI (27,19) -> (27,19)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.11 Source dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.11 Net dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I2[3] (27,19) -> (27,19)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  13.24 Source dut.cu.next_data_size_SB_LUT4_O_4_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.COUT
+Info:    routing  0.26  13.50 Net dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_I2[3] (27,19) -> (27,19)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               Source/control_unit.sv:102.52-102.101
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.31  13.81 Source dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  0.96  14.77 Net dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_I3[3] (27,19) -> (27,21)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  15.09 Source dut.cu.next_data_size_SB_LUT4_O_3_I3_SB_LUT4_O_LC.O
+Info:    routing  0.59  15.68 Net dut.cu.next_data_size_SB_LUT4_O_3_I3[2] (27,21) -> (27,22)
+Info:                          Sink dut.cu.next_data_size_SB_LUT4_O_3_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  15.99 Source dut.cu.next_data_size_SB_LUT4_O_3_LC.O
+Info:    routing  0.59  16.58 Net dut.cu.next_data_size[60] (27,22) -> (27,22)
+Info:                          Sink ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_LUT4_O_2_I1_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  16.89 Source ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_LUT4_O_2_I1_SB_LUT4_O_2_LC.O
+Info:    routing  0.59  17.48 Net ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_LUT4_O_2_I1[3] (27,22) -> (28,21)
+Info:                          Sink ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  17.80 Source ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_LUT4_O_2_LC.O
+Info:    routing  0.96  18.75 Net ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0_SB_LUT4_O_I3_SB_LUT4_I2_O[3] (28,21) -> (29,19)
+Info:                          Sink ready_send_SB_LUT4_I0_O_SB_LUT4_O_3_I2_SB_LUT4_I1_1_O_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  19.07 Source ready_send_SB_LUT4_I0_O_SB_LUT4_O_3_I2_SB_LUT4_I1_1_O_SB_LUT4_O_2_LC.O
+Info:    routing  0.59  19.66 Net ready_send_SB_LUT4_I0_O_SB_LUT4_O_2_I0[3] (29,19) -> (30,18)
+Info:                          Sink ready_send_SB_LUT4_I0_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /home/ahmed/tools/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      setup  0.34  19.99 Source ready_send_SB_LUT4_I0_O_SB_LUT4_O_1_LC.I3
+Info: 9.95 ns logic, 10.04 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source dut.buff.next_hash_buffer_SB_LUT4_O_45_I2_SB_LUT4_I0_O_SB_LUT4_I2_O_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_I2_O_SB_LUT4_O_2_LC.O
+Info:    routing  2.21  2.75 Net hash_out_byte[4]$SB_IO_OUT (3,17) -> (33,17)
+Info:                          Sink hash_out_byte[4]$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               fpga_wrapper.v:10.24-10.37
+Info: 0.54 ns logic, 2.21 ns routing
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 46.82 MHz (PASS at 45.00 MHz)
+
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 19.99 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 2.75 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 22 endpoint(s)
+Info:          + represents [1,22) endpoint(s)
+Info: [   864,   1859) |**+
+Info: [  1859,   2854) |*******+
+Info: [  2854,   3849) |****+
+Info: [  3849,   4844) |******+
+Info: [  4844,   5839) |*****+
+Info: [  5839,   6834) |***+
+Info: [  6834,   7829) |*****+
+Info: [  7829,   8824) |******+
+Info: [  8824,   9819) |*******+
+Info: [  9819,  10814) |**+
+Info: [ 10814,  11809) |*+
+Info: [ 11809,  12804) |**+
+Info: [ 12804,  13799) |****************+
+Info: [ 13799,  14794) |*********+
+Info: [ 14794,  15789) |************************************************************ 
+Info: [ 15789,  16784) |**************************************+
+Info: [ 16784,  17779) |******************************+
+Info: [ 17779,  18774) |*************************+
+Info: [ 18774,  19769) |*****+
+Info: [ 19769,  20764) |***********************+
+1 warning, 0 errors
+
+Info: Program finished normally.

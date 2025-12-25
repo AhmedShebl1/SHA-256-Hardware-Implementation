@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Nov 19 17:42:07 2025
+[*]
+[dumpfile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waves/tb_sha256_top.vcd"
+[dumpfile_mtime] "Wed Nov 19 17:39:29 2025"
+[dumpfile_size] 1325057
+[savefile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waveformats/sha256_top.gtkw"
+[timestart] 0
+[size] 1920 973
+[pos] -1 -1
+*-14.000000 26130 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_sha256_top.
+[treeopen] tb_sha256_top.dut.
+[sst_width] 297
+[signals_width] 511
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+tb_sha256_top.dut.buff.clk
+@22
+tb_sha256_top.dut.data_in[63:0]
+tb_sha256_top.dut.he.message_block[511:0]
+tb_sha256_top.dut.preproc.preprocessed_block[511:0]
+@24
+tb_sha256_top.dut.cu.state[31:0]
+@28
+tb_sha256_top.dut.cu.load
+@22
+tb_sha256_top.dut.hash[255:0]
+@24
+tb_sha256_top.dut.he.message_counter.count_out[6:0]
+tb_sha256_top.dut.count[63:0]
+@28
+tb_sha256_top.dut.hash_valid
+@22
+tb_sha256_top.dut.buff.prev_hash[255:0]
+@28
+tb_sha256_top.dut.ready_rcv
+@29
+tb_sha256_top.dut.data_valid
+[pattern_trace] 1
+[pattern_trace] 0

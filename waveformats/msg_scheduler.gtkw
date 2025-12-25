@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sat Nov  1 00:20:57 2025
+[*]
+[dumpfile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waves/tb_message_scheduler.vcd"
+[dumpfile_mtime] "Sat Nov  1 00:13:51 2025"
+[dumpfile_size] 89898
+[savefile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waveformats/msg_scheduler.gtkw"
+[timestart] 0
+[size] 1920 973
+[pos] -27 -24
+*-14.000000 45000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_message_scheduler.
+[treeopen] tb_message_scheduler.dut.
+[sst_width] 297
+[signals_width] 274
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+tb_message_scheduler.clk
+tb_message_scheduler.load
+@23
+tb_message_scheduler.dut.next_data_out[31:0]
+@22
+[color] 1
+tb_message_scheduler.dut.data_out[31:0]
+[color] 1
+tb_message_scheduler.expected_word_out[31:0]
+tb_message_scheduler.dut.next_ptr[3:0]
+tb_message_scheduler.dut.ptr[3:0]
+@28
+tb_message_scheduler.tb_check_pulse
+tb_message_scheduler.check_word__Vstatic__unnamedblk2.mismatch
+[pattern_trace] 1
+[pattern_trace] 0

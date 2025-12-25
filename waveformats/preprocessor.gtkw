@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sun Nov  9 02:59:15 2025
+[*]
+[dumpfile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waves/tb_preprocessor.vcd"
+[dumpfile_mtime] "Fri Nov  7 23:30:34 2025"
+[dumpfile_size] 26193
+[savefile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waveformats/preprocessor.gtkw"
+[timestart] 0
+[size] 1920 973
+[pos] -27 -24
+*-14.000000 22110 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_preprocessor.
+[sst_width] 297
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@22
+tb_preprocessor.data[511:0]
+tb_preprocessor.golden_output[1023:0]
+tb_preprocessor.preprocessed_block[511:0]
+@29
+[color] 1
+tb_preprocessor.length512
+[color] 1
+tb_preprocessor.second_block_flag
+@28
+[color] 5
+tb_preprocessor.check_data__Vstatic__unnamedblk4.check_pulse
+[color] 5
+tb_preprocessor.check_data__Vstatic__unnamedblk4.check_mismatch
+[pattern_trace] 1
+[pattern_trace] 0
