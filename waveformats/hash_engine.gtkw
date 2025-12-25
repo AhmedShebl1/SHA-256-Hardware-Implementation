@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sun Nov  2 17:16:03 2025
+[*]
+[dumpfile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waves/tb_hash_engine.vcd"
+[dumpfile_mtime] "Sun Nov  2 15:12:05 2025"
+[dumpfile_size] 818131
+[savefile] "/mnt/c/Users/Ahmed/OneDrive/Desktop/New_folder/rtl_designs/SHA256/waveformats/hash_engine.gtkw"
+[timestart] 1376340
+[size] 1920 973
+[pos] -1 -1
+*-14.000000 1396000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_hash_engine.
+[treeopen] tb_hash_engine.dut.
+[sst_width] 297
+[signals_width] 227
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+tb_hash_engine.clk
+@22
+[color] 1
+tb_hash_engine.hash_out[255:0]
+[color] 1
+tb_hash_engine.expected_hash[255:0]
+@24
+tb_hash_engine.dut.message_counter.count_out[6:0]
+@28
+tb_hash_engine.dut.message_counter.count_enable
+@23
+[color] 5
+tb_hash_engine.dut.message_sched.data_out[31:0]
+[color] 5
+tb_hash_engine.dut.message_sched.next_data_out[31:0]
+@28
+tb_hash_engine.dut.load
+tb_hash_engine.dut.clear_hash
+[pattern_trace] 1
+[pattern_trace] 0
